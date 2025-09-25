@@ -1,4 +1,4 @@
-<h1>{{ title }}</h1>
+<h1 class="sp-text-heading-1">{{ title }}</h1>
 
 <!-- IF / ELSE -->
 @if (showMessage) {
@@ -23,15 +23,19 @@
 <h3>Ejemplo Switch</h3>
 @switch (option) {
 @case (1) {
-<p>Opción 1 seleccionada</p>
+<p class="sp-text-caption">Opción 1 seleccionada</p>
 }
 @case (2) {
-<p>Opción 2 seleccionada</p>
+<p class="sp-text-caption">Opción 2 seleccionada</p>
 }
 @default {
-<p>Ninguna opción válida</p>
+<p class="sp-text-caption">Ninguna opción válida</p>
 }
 }
 
 
 <h3>Test componentes sherpa:</h3>
+<sp-at-alert type="SUCCESS" alert-title="Título" description="Descripción" close-button=false>
+</sp-at-alert>
+
+<sp-ml-card-ending description="Descripción"></sp-ml-card-ending>
