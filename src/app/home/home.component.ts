@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeComponent {
 
