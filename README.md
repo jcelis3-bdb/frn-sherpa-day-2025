@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | 🅰️ Angular CLI     | v20.3.3   |                                              |
 | 🟩 Node.js         | v20.19.2   | Se gestiona con `nvm` (🔰 Node Version Manager) |
 | 🟥 npm             | v10.8.2    |                                              |
-| 🎨 SHERPA          | v-.-.-     | [Sherpa 2.0](https://sherpadesignsystem.labdigitalbdbtvs.com/introduction) • |
+| 🎨 SHERPA          | v6.3.9     | [Sherpa 2.0](https://sherpadesignsystem.labdigitalbdbtvs.com/introduction) • |
 
 ## Development server
 
