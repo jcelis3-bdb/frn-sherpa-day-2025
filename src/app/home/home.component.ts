@@ -13,8 +13,5 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 export class HomeComponent {
 
   title = 'Demo SHERPA DAY 2025 🚀';
-  showMessage = true;
-  items = ['Angular', 'React', 'Vue'];
-  option = 2;
 
 }
