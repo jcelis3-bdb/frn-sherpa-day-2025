@@ -24,10 +24,21 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@npm-bbta/bbog-dig-dt-sherpa-lib/dist/bbog-dig-dt-sherpa-lib/assets/",
+                "output": "./assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@npm-bbta/bbog-dig-dt-sherpa-lib/dist/bbog-dig-dt-sherpa-lib/assets/fonts",
+                "output": "./assets/fonts"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@npm-bbta/bbog-dig-dt-sherpa-lib/dist/bbog-dig-dt-sherpa-lib/bbog-dig-dt-sherpa-lib.css"
             ]
           },
           "configurations": {
