@@ -26,8 +26,14 @@
 
   <sp-ml-multi-action class="documents" [valuesToCard]='arrSelectorAction'></sp-ml-multi-action>
 
-  <sp-at-check-button class="check-terms" id="check" [valuesToCheck]='arrCheckBox' label-html="dhewjhdjdhj">
-  </sp-at-check-button>
+  <section>
+    <sp-at-check-button class="check-terms" id="check" [valuesToCheck]='arrCheckBox'>
+    </sp-at-check-button>
+    <label>He leído y acepto los
+      <button class='sp-at-btn sp-at-btn--link sp-at-btn--lg '><label>Términos y condiciones</label></button>
+    </label>
+  </section>
+
 
   <button class='next-btn  sp-at-btn sp-at-btn--primary sp-at-btn--lg'
     aria-label="'Continuar' para ir al siguiente paso.">
