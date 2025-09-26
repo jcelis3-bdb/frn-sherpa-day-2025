@@ -2,7 +2,7 @@
   label-tertiary=""></sp-ml-header>
 
 <div class="content">
-  <section class="container-screen-2">
+  <section class="content-description">
     <label class="sp-text-tag">TERMINOS Y CONDICIONES</label>
     <h1>Conoce y acepta los documentos</h1>
     <label>Revisa detenidamente los documentos relacionados con tu
@@ -10,7 +10,7 @@
     </label>
   </section>
 
-  <sp-ml-accordion>
+  <sp-ml-accordion class="documents">
     <sp-at-accordion-item icon-name='ico-document-check' title-label="Pagaré" true>
     </sp-at-accordion-item>
 
@@ -21,9 +21,11 @@
     </sp-at-accordion-item>
   </sp-ml-accordion>
 
-  <sp-at-check-button id="check" [valuesToCheck]='arrCheckBox'>
+  <sp-at-check-button class="check-terms" id="check" [valuesToCheck]='arrCheckBox'>
   </sp-at-check-button>
 
-  <button class='sp-at-btn sp-at-btn--primary sp-at-btn--lg '>Continuar</button>
+  <button class='next-btn sp-at-btn sp-at-btn--primary sp-at-btn--lg'>
+    Continuar
+  </button>
 
 </div>

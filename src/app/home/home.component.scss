@@ -1,3 +1,25 @@
 .content {
   max-width: 568px;
+  margin: var(--sp-spacing-8) auto;
+}
+
+.content-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-spacing-3);
+  margin-bottom: var(--sp-spacing-8);
+}
+
+.documents {
+  display: block;
+  margin-bottom: var(--sp-spacing-6);
+}
+
+.check-terms {
+  display: block;
+  margin-bottom: var(--sp-spacing-8);
+}
+
+.next-btn {
+  max-width: 136px;
 }
