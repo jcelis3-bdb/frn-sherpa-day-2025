@@ -1,16 +1,27 @@
 <sp-ml-header back='TRUE' close='TRUE' icon-secundary="" label-secundary="" icon-tertiary=""
   label-tertiary=""></sp-ml-header>
 
+<span class="visually-hidden">
+  Paso actual: aceptación de documentos.
+  Debes revisar y aceptar los términos y condiciones para continuar con tu solicitud.
+</span>
+
 <div class="content">
   <section class="content-description">
-    <label class="description-label sp-text-tag">TERMINOS Y CONDICIONES</label>
-    <h1 class="description-title sp-text-kiffo-heading-3">Conoce y acepta los documentos</h1>
+    <p class="description-label sp-text-tag" aria-label="Texto: TERMINOS Y CONDICIONES">TERMINOS Y CONDICIONES</p>
+    <h1 class="description-title sp-text-kiffo-heading-3" aria-label="Titulo: Conoce y acepta los documentos">
+      Conoce y acepta los documentos
+    </h1>
 
-    <label class="description-resume sp-text-paragraph-m">
+    <p class="description-resume sp-text-paragraph-m">
       Revisa detenidamente los documentos relacionados con tu solicitud. Al aceptar, confirmas que los has leído y estás
       de acuerdo con ellos.
-    </label>
+    </p>
   </section>
+
+  <span class="visually-hidden">
+    A continuación: Encontraras los 3 archivos enlistados de la solicitud. Accede a los 3 documentos requeridos
+  </span>
 
   <sp-ml-accordion class="documents">
     <sp-at-accordion-item [iconName]='icoDocument' [titleLabel]="promissoryNote">
