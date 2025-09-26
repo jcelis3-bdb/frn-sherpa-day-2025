@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,8 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeComponent {
+  arrCheckBox = [
+    {label: "He leído y acepto los terminos y condiciones", value: "s", isChecked: "false"}];
 
-  title = 'Demo SHERPA DAY 2025 🚀';
 
 }
