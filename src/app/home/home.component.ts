@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle('Formulario para conocer y aceptar los documentos');
+    this.titleService.setTitle('Formulario para conocer y aceptar los documentos de la solicitud');
   }
 
 }
