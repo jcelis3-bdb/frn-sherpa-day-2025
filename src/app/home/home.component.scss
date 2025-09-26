@@ -11,6 +11,11 @@
   overflow: hidden;
 }
 
+.visually-hidden:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .content {
   max-width: 568px;
   margin: var(--sp-spacing-8) auto;
