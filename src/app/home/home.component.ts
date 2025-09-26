@@ -15,18 +15,24 @@ export class HomeComponent implements OnInit {
 
   arrCheckBox = [
     {
-      label: "He leído y acepto los terminos y condiciones",
+      label: "He leído y acepto los Términos y condiciones",
       value: "s",
       isChecked: "false",
-      labelHtml: 'ttt'
     }
   ];
-  promissoryNote = 'Pagaré';
-  instructionLetter = 'Carta instrucciones pagaré';
-  resourceStatement = 'Declaración de recursos';
-  icoDocument = 'ico-document-check';
-  icoBank = 'ico-bank-references';
-  icoDocumentService = 'ico-documents-services';
+
+  arrSelectorAction = [
+    {
+      "icon": "ico-document-check", "title": "Pagaré", "value": "0"
+    },
+    {
+      "icon": "ico-bank-references", "title": "Carta instrucciones pagaré", "value": "1"
+    },
+    {
+      "icon": "ico-documents-services", "title": "Declaración de recursos", "value": "1"
+    }
+  ]
+
 
   constructor(
     private titleService: Title,

@@ -1,5 +1,5 @@
 <sp-ml-header back='TRUE' close='TRUE' icon-secundary="" label-secundary="" icon-tertiary=""
-  label-tertiary=""></sp-ml-header>
+              label-tertiary=""></sp-ml-header>
 
 <div class="content">
   <section class="content-description">
@@ -12,18 +12,10 @@
     </label>
   </section>
 
-  <sp-ml-accordion class="documents">
-    <sp-at-accordion-item [iconName]='icoDocument' [titleLabel]="promissoryNote">
-    </sp-at-accordion-item>
 
-    <sp-at-accordion-item [iconName]='icoBank' [titleLabel]="instructionLetter">
-    </sp-at-accordion-item>
+  <sp-ml-multi-action class="documents" [valuesToCard]='arrSelectorAction'></sp-ml-multi-action>
 
-    <sp-at-accordion-item [iconName]='icoDocumentService' [titleLabel]="resourceStatement">
-    </sp-at-accordion-item>
-  </sp-ml-accordion>
-
-  <sp-at-check-button class="check-terms" id="check" [valuesToCheck]='arrCheckBox'>
+  <sp-at-check-button class="check-terms" id="check" [valuesToCheck]='arrCheckBox' label-html="dhewjhdjdhj">
   </sp-at-check-button>
 
   <button class='next-btn  sp-at-btn sp-at-btn--primary sp-at-btn--lg'
