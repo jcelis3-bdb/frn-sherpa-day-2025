@@ -1,3 +1,47 @@
-<h1 class="sp-text-heading-1">{{ title }}</h1>
-<br>
-<sp-ml-card-ending description="Descripción"></sp-ml-card-ending>
+<sp-ml-header back='TRUE' close='TRUE' icon-secundary="" label-secundary="" icon-tertiary=""
+  label-tertiary=""></sp-ml-header>
+
+<span class="visually-hidden">
+  Paso actual: aceptación de documentos.
+  Debes revisar y aceptar los términos y condiciones para continuar con tu solicitud.
+</span>
+
+<div class="content">
+  <section class="content-description">
+    <p class="description-label sp-text-tag">TERMINOS Y CONDICIONES</p>
+    <h1 class="description-title sp-text-kiffo-heading-3">
+      Conoce y acepta los documentos
+    </h1>
+
+    <p class="description-resume sp-text-paragraph-m">
+      Revisa detenidamente los documentos relacionados con tu solicitud. Al aceptar, confirmas que los has leído y estás
+      de acuerdo con ellos.
+    </p>
+  </section>
+
+  <span class="visually-hidden">
+    A continuación: Encontraras los 3 archivos enlistados de la solicitud. Accede a los 3 documentos requeridos
+  </span>
+
+
+  <sp-ml-multi-action class="documents" [valuesToCard]='arrSelectorAction'></sp-ml-multi-action>
+
+  <section class="grupo-check">
+    <sp-at-check-button class="check-terms" id="check" [valuesToCheck]='arrCheckBox'>
+    </sp-at-check-button>
+    <label class="check-text" aria-label="He leído y acepto los términos y condiciones.">He leído y acepto los
+      <button class='link sp-at-btn sp-at-btn--link sp-at-btn--lg '>
+        <label aria-label="Link para ver Términos y condiciones.">
+          Términos y condiciones
+        </label>
+      </button>
+    </label>
+  </section>
+
+
+  <button class='next-btn  sp-at-btn sp-at-btn--primary sp-at-btn--lg'
+    aria-label="'Continuar' para ir al siguiente paso.">
+    Continuar
+  </button>
+
+</div>

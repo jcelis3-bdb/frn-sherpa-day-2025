@@ -1,5 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +11,35 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  title = 'Demo SHERPA DAY 2025 🚀';
+  arrCheckBox = [
+    {
+      value: "s",
+      isChecked: "false",
+    }
+  ];
+
+  arrSelectorAction = [
+    {
+      "icon": "ico-document-check", "title": "Pagaré", "value": "0"
+    },
+    {
+      "icon": "ico-bank-references", "title": "Carta instrucciones pagaré", "value": "1"
+    },
+    {
+      "icon": "ico-documents-services", "title": "Declaración de recursos", "value": "1"
+    }
+  ]
+
+
+  constructor(
+    private titleService: Title,
+  ) {
+  }
+
+  ngOnInit(): void {
+    this.titleService.setTitle('Formulario para conocer y aceptar los documentos de la solicitud');
+  }
 
 }
