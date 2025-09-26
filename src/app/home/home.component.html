@@ -1,5 +1,5 @@
 <sp-ml-header back='TRUE' close='TRUE' icon-secundary="" label-secundary="" icon-tertiary=""
-              label-tertiary=""></sp-ml-header>
+  label-tertiary=""></sp-ml-header>
 
 <span class="visually-hidden">
   Paso actual: aceptación de documentos.
@@ -26,11 +26,15 @@
 
   <sp-ml-multi-action class="documents" [valuesToCard]='arrSelectorAction'></sp-ml-multi-action>
 
-  <section>
+  <section class="grupo-check">
     <sp-at-check-button class="check-terms" id="check" [valuesToCheck]='arrCheckBox'>
     </sp-at-check-button>
-    <label>He leído y acepto los
-      <button class='sp-at-btn sp-at-btn--link sp-at-btn--lg '><label>Términos y condiciones</label></button>
+    <label class="check-text" aria-label="He leído y acepto los términos y condiciones.">He leído y acepto los
+      <button class='link sp-at-btn sp-at-btn--link sp-at-btn--lg '>
+        <label aria-label="Link para ver Términos y condiciones.">
+          Términos y condiciones
+        </label>
+      </button>
     </label>
   </section>
 

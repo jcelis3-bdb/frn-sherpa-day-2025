@@ -38,6 +38,24 @@
   margin-bottom: var(--sp-spacing-8);
 }
 
+.grupo-check,
+.check-text {
+  display: flex;
+}
+
+.grupo-check {
+  gap: var(--sp-spacing-2);
+}
+.check-text {
+  height: fit-content;
+  align-content: center;
+  align-items: center;
+}
+
+.link {
+  margin-left: var(--sp-spacing-1);
+}
+
 .next-btn {
   max-width: 136px;
 }
