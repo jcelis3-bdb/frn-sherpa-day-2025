@@ -1,27 +1,29 @@
 <sp-ml-header back='TRUE' close='TRUE' icon-secundary="" label-secundary="" icon-tertiary=""
-              label-tertiary=""></sp-ml-header>
+  label-tertiary=""></sp-ml-header>
 
-<section class="container-screen-2">
-  <label>TERMINOS Y CONDICIONES</label>
-  <h1>Conoce y acepta los documentos</h1>
-  <label>Revisa detenidamente los documentos relacionados con tu
-    solicitud. Al aceptar, confirmas que los has leído y estás de acuerdo con ellos.
-  </label>
-</section>
+<div class="content">
+  <section class="container-screen-2">
+    <label class="sp-text-tag">TERMINOS Y CONDICIONES</label>
+    <h1>Conoce y acepta los documentos</h1>
+    <label>Revisa detenidamente los documentos relacionados con tu
+      solicitud. Al aceptar, confirmas que los has leído y estás de acuerdo con ellos.
+    </label>
+  </section>
 
+  <sp-ml-accordion>
+    <sp-at-accordion-item icon-name='ico-document-check' title-label="Pagaré" true>
+    </sp-at-accordion-item>
 
-<sp-ml-accordion>
-  <sp-at-accordion-item icon-name='ico-document-check' title-label="Pagaré" true></sp-at-accordion-item>
-  <sp-at-accordion-item icon-name='ico-bank-references' title-label="Carta instrucciones pagaré"
-                        true></sp-at-accordion-item>
-  <sp-at-accordion-item icon-name='ico-documents-services' title-label="Declaración de recursos" true>
+    <sp-at-accordion-item icon-name='ico-bank-references' title-label="Carta instrucciones pagaré" true>
+    </sp-at-accordion-item>
 
-  </sp-at-accordion-item>
-</sp-ml-accordion>
+    <sp-at-accordion-item icon-name='ico-documents-services' title-label="Declaración de recursos" true>
+    </sp-at-accordion-item>
+  </sp-ml-accordion>
 
+  <sp-at-check-button id="check" [valuesToCheck]='arrCheckBox'>
+  </sp-at-check-button>
 
-<sp-at-check-button id="check"
-                    [valuesToCheck]='arrCheckBox'>
-</sp-at-check-button>
+  <button class='sp-at-btn sp-at-btn--primary sp-at-btn--lg '>Continuar</button>
 
-<button class='sp-at-btn sp-at-btn--primary sp-at-btn--lg '>Continuar</button>
+</div>
