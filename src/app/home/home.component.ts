@@ -1,5 +1,6 @@
-import {CommonModule} from '@angular/common';
-import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular/core';
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   arrCheckBox = [
     {
@@ -26,5 +27,13 @@ export class HomeComponent {
   icoDocument: 'ico-document-check';
   icoBank: 'ico-bank-references';
   icoDocumentService: 'ico-documents-services';
+
+  constructor(
+    private titleService: Title,
+  ) { }
+
+  ngOnInit(): void {
+    this.titleService.setTitle('Formulario para conocer y aceptar los documentos');
+  }
 
 }
