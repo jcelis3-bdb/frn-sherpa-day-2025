@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
 
   arrCheckBox = [
     {
-      label: "He leído y acepto los Términos y condiciones",
       value: "s",
       isChecked: "false",
     }
